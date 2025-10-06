@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: 100dvh;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative mx-auto flex h-full min-h-screen w-full flex-col justify-between" style="height: 950px; width: 390px;">
+<div class="flex-grow">
+<div class="h-11 w-full bg-background-light dark:bg-background-dark">
+<div class="mx-auto flex h-full w-full max-w-md items-center justify-between px-6">
+<div class="flex items-center space-x-1">
+<span class="font-sans text-sm font-semibold text-gray-900 dark:text-white">9:41</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 18px;">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 18px;">wifi</span>
+<div class="relative">
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 22px;">battery_full</span>
+</div>
+</div>
+</div>
+</div>
+<header class="p-4">
+<div class="relative flex items-center justify-center">
+<button class="absolute left-0 text-gray-800 dark:text-gray-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-gray-900 dark:text-white">Create New Quest - Select Type</h1>
+</div>
+</header>
+<main class="flex-grow px-4 pb-4">
+<div class="relative mb-6">
+<input class="w-full h-12 pl-10 pr-4 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800/50 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search for quest types..." type="text"/>
+<div class="absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">search</span>
+</div>
+</div>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/50">
+<span class="material-symbols-outlined text-blue-500 dark:text-blue-400">psychology</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">Sensory Feedback</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Gather detailed consumer opinions on the look, feel, and sound of your product.</p>
+</div>
+</div>
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-100 dark:bg-yellow-900/50">
+<span class="material-symbols-outlined text-yellow-500 dark:text-yellow-400">restaurant_menu</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">Dine &amp; Review</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Get authentic reviews of your restaurant or food product from real customers.</p>
+</div>
+</div>
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-pink-100 dark:bg-pink-900/50">
+<span class="material-symbols-outlined text-pink-500 dark:text-pink-400">campaign</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">Ad Campaign</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Test the effectiveness and recall of your marketing campaigns.</p>
+</div>
+</div>
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-100 dark:bg-cyan-900/50">
+<span class="material-symbols-outlined text-cyan-500 dark:text-cyan-400">phone_iphone</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">App UX</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Understand product usability by observing real user interactions and feedback.</p>
+</div>
+</div>
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 dark:bg-green-900/50">
+<span class="material-symbols-outlined text-green-500 dark:text-green-400">shopping_bag</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">In-Store Experience</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Evaluate the customer journey within a physical retail space.</p>
+</div>
+</div>
+<div class="flex cursor-pointer flex-col space-y-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 p-4 transition-all hover:shadow-lg dark:hover:border-primary">
+<div class="flex-shrink-0">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-100 dark:bg-indigo-900/50">
+<span class="material-symbols-outlined text-indigo-500 dark:text-indigo-400">question_answer</span>
+</div>
+</div>
+<div>
+<h5 class="font-semibold text-gray-800 dark:text-gray-200">Survey</h5>
+<p class="mt-1 text-xs text-gray-600 dark:text-gray-400">Collect quantitative and qualitative data through targeted questionnaires.</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<nav class="flex justify-around border-t border-gray-200 dark:border-gray-800 py-2">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<p class="text-xs font-medium">Quests</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<p class="text-xs font-medium">Results</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">credit_card</span>
+<p class="text-xs font-medium">Billing</p>
+</a>
+</nav>
+<div class="pb-4"></div>
+</footer>
+</div>
+
+</body></html>
